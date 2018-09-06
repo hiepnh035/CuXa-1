@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { View, Text, Button } from "react-native";
 import { GoogleSignin, GoogleSigninButton } from "react-native-google-signin";
 
+var FBLoginButton = require('../../../../FBLoginButton');
+
 class Login extends Component {
   state = {
     userInfo: null
@@ -26,9 +28,8 @@ class Login extends Component {
     return (
       <View>
         <Text>Hello</Text>
-        <Button
-          title="Sign In With Facebook"
-          onPress={() => this.props.navigation.navigate("UserInfo")}
+        <FBLoginButton
+          title="Sign In With Google"
         />
         <Button
           title="Sign In With Google"
