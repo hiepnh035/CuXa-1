@@ -13,7 +13,7 @@ import {
   View,
   TouchableOpacity
 } from "react-native";
-import { LoginNavigator } from "./android/src/navigations/LoginStack";
+import { LoginNavigator } from "./src/navigations/LoginStack";
 
 const instructions = Platform.select({
   ios: "Press Cmd+R to reload,\n" + "Cmd+D or shake for dev menu",
